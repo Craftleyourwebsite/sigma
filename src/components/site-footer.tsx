@@ -109,6 +109,8 @@ export default function SiteFooter({ compact = false }: SiteFooterProps) {
                             ? "/case-studies"
                             : item === "Contacts"
                               ? "/contact"
+                              : item === "Support"
+                                ? "/support"
                               : "#";
                 const isInternal = href.startsWith("/");
 
@@ -173,6 +175,12 @@ export default function SiteFooter({ compact = false }: SiteFooterProps) {
             <Link href="/login" className="text-white/80 transition hover:text-[#b794f6]">
               Admin
             </Link>
+            <a href="#" className="text-white/80 transition hover:text-[#b794f6]">
+              Privacy Policy
+            </a>
+            <a href="#" className="text-white/80 transition hover:text-[#b794f6]">
+              Terms of Service
+            </a>
             <p>
               Built by{" "}
               <a

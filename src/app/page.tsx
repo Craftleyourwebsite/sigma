@@ -125,7 +125,7 @@ export default function Home() {
       description:
         "Initially established to enhance Sigma Health systems, the division now offers AI services to external organizations seeking to improve operational efficiency, decision-making, and automation.",
       image:
-        "https://images.unsplash.com/photo-1677442135136-760c813a743d?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1200&q=80",
       tone: "bg-[#f3f4f6]",
     },
     {
@@ -135,7 +135,7 @@ export default function Home() {
       description:
         "Sigma Ventures is the innovation and investment arm of Sigma Group. It serves as a platform for all its experimental and high-impact ideas that align with Sigma Group's long-term goals.",
       image:
-        "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80",
       tone: "bg-[#f7f8fa]",
     },
   ];
@@ -178,7 +178,7 @@ export default function Home() {
       closing:
         "The toolkit has been successfully deployed across large clinic networks with multiple facilities, significantly reducing operational risk and repeat testing.",
       image:
-        "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=1200&q=80",
     },
     {
       id: "dispatch",
@@ -279,7 +279,7 @@ export default function Home() {
             </nav>
 
             <a
-              href="#support"
+              href="/support"
               className="justify-self-end rounded-full bg-white px-8 py-2.5 text-sm font-semibold text-[#8b5cf6] shadow-[0_10px_24px_rgba(0,0,0,0.24)] transition hover:bg-[#f5faff]"
             >
               Support
@@ -441,7 +441,7 @@ export default function Home() {
             <p className="text-sm font-medium text-[#6b7280] sm:text-base">Frequently Asked Questions</p>
             <h2 className="mt-4 text-3xl font-semibold leading-[1.08] tracking-[-0.03em] text-[#111827] sm:text-5xl">
               Everything You Need to Know:
-              <br className="hidden sm:block" /> Sigma Group FAQs
+              <br className="hidden sm:block" /> <span className="text-[#8b5cf6]">Sigma Group FAQs</span>
             </h2>
 
             <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">

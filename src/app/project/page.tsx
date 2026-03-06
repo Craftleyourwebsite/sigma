@@ -192,7 +192,7 @@ export default function ProjectPage() {
             </nav>
 
             <a
-              href="#support"
+              href="/support"
               className="justify-self-end rounded-full bg-white px-8 py-2.5 text-sm font-semibold text-[#8b5cf6] shadow-[0_10px_24px_rgba(0,0,0,0.24)] transition hover:bg-[#f5faff]"
             >
               Support

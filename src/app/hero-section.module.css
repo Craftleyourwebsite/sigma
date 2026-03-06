@@ -1,0 +1,402 @@
+.ambient {
+  background:
+    radial-gradient(circle at 12% 14%, rgba(255, 176, 125, 0.32), transparent 34%),
+    radial-gradient(circle at 86% 18%, rgba(255, 240, 215, 0.2), transparent 28%),
+    radial-gradient(circle at 78% 80%, rgba(255, 135, 72, 0.24), transparent 38%);
+  mix-blend-mode: screen;
+}
+
+.fadeUp {
+  opacity: 0;
+  animation: hero-fade-up 0.85s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.delay1 {
+  animation-delay: 0.14s;
+}
+
+.delay2 {
+  animation-delay: 0.24s;
+}
+
+.techMarquee {
+  overflow: hidden;
+}
+
+.techMarqueeTrack {
+  --tech-gap: 4.5rem;
+  display: flex;
+  width: max-content;
+  gap: var(--tech-gap);
+  animation: tech-marquee-slide 38s linear infinite;
+  will-change: transform;
+}
+
+.techMarqueeTrack:hover {
+  animation-play-state: paused;
+}
+
+.heroGalleryWrap {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: min(640px, 54vw);
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent, black 14%, black 88%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 14%, black 88%, transparent);
+}
+
+.heroGalleryTrack {
+  --hero-gallery-gap: 0.9rem;
+  display: flex;
+  width: max-content;
+  gap: var(--hero-gallery-gap);
+  animation: hero-gallery-slide 26s linear infinite;
+  will-change: transform;
+  padding: 0.5rem 0.35rem;
+}
+
+.heroGalleryTrack:hover {
+  animation-play-state: paused;
+}
+
+.heroGalleryCard {
+  position: relative;
+  overflow: hidden;
+  width: 270px;
+  height: 124px;
+  border-radius: 44px;
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
+  box-shadow:
+    0 14px 24px rgba(0, 0, 0, 0.28),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+  flex: 0 0 auto;
+}
+
+.heroGalleryCardLight {
+  background: #ececec;
+  color: #7a7a7a;
+}
+
+.heroGalleryCardTeal {
+  background: #0f6f83;
+  color: #ffffff;
+}
+
+.heroGalleryCardViolet {
+  background: linear-gradient(145deg, #7a5af8, #5f3fe7);
+  color: #ffffff;
+}
+
+.heroGalleryCardOutline {
+  background: transparent;
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.9);
+  box-shadow: none;
+  width: 252px;
+}
+
+.heroGalleryCardInner {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 24px;
+}
+
+.heroGalleryBadge {
+  position: absolute;
+  right: 18px;
+  top: 14px;
+  display: inline-flex;
+  height: 22px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 11px;
+  border-radius: 999px;
+  background: rgba(10, 53, 64, 0.62);
+  color: #eaf8fc;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.heroGalleryTitle {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+}
+
+.heroGalleryCardLight .heroGalleryTitle {
+  font-size: 18px;
+}
+
+.heroGallerySubtitle {
+  margin: 0.35rem 0 0;
+  font-size: 13px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  font-weight: 500;
+}
+
+.heroGalleryCardTeal .heroGalleryTitle {
+  font-size: 22px;
+  margin-top: 12px;
+}
+
+.heroGalleryCardTeal .heroGallerySubtitle {
+  margin-top: 0.28rem;
+  font-size: 14px;
+  color: #9fd0dc;
+  font-weight: 500;
+}
+
+.heroGalleryCardViolet .heroGalleryTitle {
+  font-size: 24px;
+  line-height: 1.12;
+  text-transform: lowercase;
+}
+
+.heroGalleryCardOutline .heroGalleryTitle {
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: -0.015em;
+  font-weight: 600;
+  text-wrap: balance;
+}
+
+.heroGalleryCardOutline .heroGalleryCardInner {
+  padding: 0 16px 0 18px;
+}
+
+.projectTrack {
+  display: flex;
+  gap: 0.75rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 0.25rem;
+}
+
+.projectTrack::-webkit-scrollbar {
+  display: none;
+}
+
+.projectCard {
+  position: relative;
+  height: 380px;
+  min-width: 85vw;
+  flex: 0 0 85vw;
+  scroll-snap-align: center;
+  overflow: hidden;
+  border-radius: 24px;
+  transition:
+    flex-grow 0.45s ease,
+    flex-basis 0.45s ease,
+    box-shadow 0.45s ease,
+    transform 0.45s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+.projectCardImage {
+  opacity: 0.9;
+  transition:
+    opacity 0.45s ease,
+    transform 0.45s ease;
+}
+
+.projectOverlay {
+  opacity: 0.78;
+  transition: opacity 0.3s ease;
+}
+
+.projectExpanded {
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.projectCollapsed {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .projectCard {
+    height: 520px;
+    min-width: 48vw;
+    flex-basis: 48vw;
+    border-radius: 34px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .projectTrack {
+    gap: 1.25rem;
+    overflow: visible;
+    scroll-snap-type: none;
+  }
+
+  .projectCard {
+    height: 620px;
+    min-width: 0;
+    flex: 0.8 1 0;
+    border-radius: 40px;
+  }
+
+  .projectCardDefault {
+    flex-grow: 3.8;
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.1);
+  }
+
+  .projectCollapsed {
+    position: absolute;
+    inset-inline: 0;
+    bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    padding-inline: 1rem;
+    opacity: 0.3;
+    transition: opacity 0.3s ease;
+  }
+
+  .projectExpanded {
+    opacity: 0;
+    transform: translateY(26px);
+  }
+
+  .projectCardDefault .projectExpanded {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .projectCardDefault .projectCollapsed {
+    opacity: 0;
+  }
+
+  .projectCardDefault .projectOverlay {
+    opacity: 1;
+  }
+
+  .projectCardDefault .projectCardImage {
+    opacity: 1;
+  }
+
+  .projectTrack:hover .projectCard {
+    flex-grow: 0.8;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  }
+
+  .projectTrack:hover .projectCardImage {
+    opacity: 0.82;
+  }
+
+  .projectTrack:hover .projectCardDefault:not(:hover):not(:focus-within) .projectExpanded {
+    opacity: 0;
+    transform: translateY(26px);
+  }
+
+  .projectTrack:hover .projectCardDefault:not(:hover):not(:focus-within) .projectCollapsed {
+    opacity: 0.3;
+  }
+
+  .projectTrack:hover .projectCardDefault:not(:hover):not(:focus-within) .projectOverlay {
+    opacity: 0.78;
+  }
+
+  .projectTrack:hover .projectCardDefault:not(:hover):not(:focus-within) .projectCardImage {
+    opacity: 0.82;
+  }
+
+  .projectTrack:hover .projectCard:hover,
+  .projectTrack:hover .projectCard:focus-within {
+    flex-grow: 4;
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.1);
+  }
+
+  .projectTrack:hover .projectCard:hover .projectExpanded,
+  .projectTrack:hover .projectCard:focus-within .projectExpanded {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.1s;
+  }
+
+  .projectTrack:hover .projectCard:hover .projectCollapsed,
+  .projectTrack:hover .projectCard:focus-within .projectCollapsed {
+    opacity: 0;
+  }
+
+  .projectTrack:hover .projectCard:hover .projectCardImage,
+  .projectTrack:hover .projectCard:focus-within .projectCardImage {
+    opacity: 1;
+    transform: scale(1.03);
+  }
+
+  .projectTrack:hover .projectCard:hover .projectOverlay,
+  .projectTrack:hover .projectCard:focus-within .projectOverlay {
+    opacity: 1;
+  }
+}
+
+@keyframes hero-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes tech-marquee-slide {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(calc(-50% - 2.25rem), 0, 0);
+  }
+}
+
+@keyframes hero-gallery-slide {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(calc(-50% - 0.425rem), 0, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fadeUp,
+  .techMarqueeTrack,
+  .heroGalleryTrack {
+    opacity: 1;
+    animation: none;
+    transform: none;
+  }
+
+  .projectCard,
+  .projectCardImage,
+  .projectOverlay,
+  .projectExpanded,
+  .projectCollapsed {
+    transition: none !important;
+    transform: none !important;
+  }
+}
+
+@media (max-width: 1023px) {
+  .heroGalleryWrap {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    width: 100%;
+    margin-top: 1.3rem;
+    mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+  }
+}

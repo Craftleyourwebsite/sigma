@@ -100,42 +100,38 @@ export default function Home() {
   const divisions: Division[] = [
     {
       id: "health",
-      name: "SIGMA HEALTH",
+      name: "KLAMA HEALTH",
       tagline: "Health Management",
       description:
-        "Sigma Health is a specialized digital health division focused on the design, development, deployment, and support of Health Management Information Systems (HMIS) and health-sector software solutions.",
-      image:
-        "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1200&q=80",
+        "KLAMA Health is a specialized digital health division focused on the design, development, deployment, and support of Health Management Information Systems (HMIS) and health-sector software solutions.",
+      image: "/health.png",
       tone: "bg-[#f2f3f5]",
     },
     {
       id: "consult",
-      name: "SIGMA CONSULT",
+      name: "KLAMA CONSULT",
       tagline: "ICT Consulting",
       description:
-        "Sigma Consult provides professional ICT consulting and technical delivery services to organizations seeking expert support in digital transformation and technology implementation.",
-      image:
-        "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80",
+        "KLAMA Consult provides professional ICT consulting and technical delivery services to organizations seeking expert support in digital transformation and technology implementation.",
+      image: "/consult.png",
       tone: "bg-[#f6f7f8]",
     },
     {
       id: "ai",
-      name: "SIGMA AI",
+      name: "KLAMA AI",
       tagline: "AI Services",
       description:
-        "Initially established to enhance Sigma Health systems, the division now offers AI services to external organizations seeking to improve operational efficiency, decision-making, and automation.",
-      image:
-        "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1200&q=80",
+        "Initially established to enhance KLAMA Health systems, the division now offers AI services to external organizations seeking to improve operational efficiency, decision-making, and automation.",
+      image: "/ai.mp4",
       tone: "bg-[#f3f4f6]",
     },
     {
       id: "ventures",
-      name: "SIGMA VENTURES",
+      name: "KLAMA VENTURES",
       tagline: "Innovation Arm",
       description:
-        "Sigma Ventures is the innovation and investment arm of Sigma Group. It serves as a platform for all its experimental and high-impact ideas that align with Sigma Group's long-term goals.",
-      image:
-        "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80",
+        "KLAMA Ventures is the innovation and investment arm of KLAMA Group. It serves as a platform for all its experimental and high-impact ideas that align with KLAMA Group's long-term goals.",
+      image: "/ventures.jpg",
       tone: "bg-[#f7f8fa]",
     },
   ];
@@ -144,9 +140,9 @@ export default function Home() {
       id: "hmis",
       category: "Healthcare",
       heading: "Strengthening Healthcare Through Digital Systems",
-      title: "Sigma Health HMIS",
+      title: "KLAMA Health HMIS",
       description:
-        "Sigma Health’s proprietary HMIS is deployed in multiple clinics across Malawi.",
+        "KLAMA Health’s proprietary HMIS is deployed in multiple clinics across Malawi.",
       highlightsIntro: "The platform enables:",
       highlights: [
         "Secure patient data management",
@@ -156,9 +152,9 @@ export default function Home() {
         "Improved clinical and operational decision-making",
       ],
       closing:
-        "Sigma Health also provides laboratory equipment integration for facilities using existing HMIS platforms, reducing clinical risk and improving data integrity.",
+        "KLAMA Health also provides laboratory equipment integration for facilities using existing HMIS platforms, reducing clinical risk and improving data integrity.",
       image:
-        "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1200&q=80",
+        "https://cdn.dribbble.com/userupload/46342797/file/d1f580ab032ce3a084c46cacc460d2e6.jpg?resize=1504x1128&vertical=center",
     },
     {
       id: "lab-toolkit",
@@ -166,7 +162,7 @@ export default function Home() {
       heading: "Connecting Diagnostic Equipment to Digital Health Systems",
       title: "Laboratory Machine Integration Toolkit",
       description:
-        "Sigma Group has developed a Laboratory Machine Integration Toolkit that enables healthcare facilities to connect diagnostic equipment directly to HMIS platforms.",
+        "KLAMA Group has developed a Laboratory Machine Integration Toolkit that enables healthcare facilities to connect diagnostic equipment directly to HMIS platforms.",
       highlightsIntro: "The toolkit:",
       highlights: [
         "Automates transmission of lab results into HMIS",
@@ -178,7 +174,7 @@ export default function Home() {
       closing:
         "The toolkit has been successfully deployed across large clinic networks with multiple facilities, significantly reducing operational risk and repeat testing.",
       image:
-        "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=1200&q=80",
+        "https://cdn.dribbble.com/userupload/10235819/file/original-af90d9855e919eb5ac3c45102a68cccd.jpg?resize=1200x1600&vertical=center",
     },
     {
       id: "dispatch",
@@ -186,7 +182,7 @@ export default function Home() {
       heading: "A Flexible Technology Framework for Real-Time Operations",
       title: "Emergency Dispatch & Mobility Coordination Platform",
       description:
-        "Sigma Group has developed a modular dispatch and mobility coordination platform designed to support organizations that manage vehicles, field teams, or time-critical services.",
+        "KLAMA Group has developed a modular dispatch and mobility coordination platform designed to support organizations that manage vehicles, field teams, or time-critical services.",
       highlightsIntro: "The platform is built to be customized for diverse operational models, including:",
       highlights: [
         "Emergency and ambulance dispatch",
@@ -198,24 +194,24 @@ export default function Home() {
       closing:
         "At the core of the platform is a customized mapping and routing engine optimized for local operating environments.",
       image:
-        "https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=1200&q=80",
+        "https://cdn.dribbble.com/userupload/4210878/file/original-54c175d02a389321bcb6adecf93ed85b.png?resize=1504x1128&vertical=center",
     },
   ];
   const faqItems = [
     {
-      question: "How does Sigma tailor technology strategy to our organization?",
+      question: "How does KLAMA tailor technology strategy to our organization?",
       answer:
         "We begin with a discovery phase on your workflows, data, and priorities, then build a practical roadmap that combines consulting, product delivery, and measurable outcomes.",
     },
     {
-      question: "Can Sigma integrate with our current systems and tools?",
+      question: "Can KLAMA integrate with our current systems and tools?",
       answer:
         "Yes. Our teams handle API integrations, secure data exchange, and migration planning so HMIS, operations, and reporting tools work together without disrupting daily operations.",
     },
     {
-      question: "Which sectors can benefit from Sigma solutions?",
+      question: "Which sectors can benefit from KLAMA solutions?",
       answer:
-        "Sigma supports healthcare providers, NGOs, field operations teams, and enterprises that need dependable digital systems for service delivery, coordination, and decision-making.",
+        "KLAMA supports healthcare providers, NGOs, field operations teams, and enterprises that need dependable digital systems for service delivery, coordination, and decision-making.",
     },
     {
       question: "How do you ensure reliability in low-resource environments?",
@@ -232,12 +228,25 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#0a0807] text-white">
       <section className="relative min-h-screen overflow-hidden bg-black md:h-screen">
-        <div className="absolute inset-0 bg-black" />
+        {/* Hero Background Image & Gradient Overlay */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/hero-bg.png"
+            alt="Hero Background"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-center"
+          />
+          {/* Multi-layered premium overlay to ensure readability */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/55 to-black/30" />
+          <div className="absolute inset-0 bg-black/40" />
+        </div>
 
         <div className="relative z-10 mx-auto flex h-full w-full max-w-[1380px] flex-col px-4 pb-8 pt-6 sm:px-7 lg:px-12">
           <header className={`${styles.fadeUp} grid grid-cols-1 items-center gap-4 md:grid-cols-[auto_1fr_auto]`}>
             <a href="#" className="flex items-center justify-self-center md:justify-self-start">
-              <Image src="/sigmalogo.png" alt="Sigma Logo" width={108} height={139} className="h-16 w-auto" priority />
+              <Image src="/klama.svg" alt="KLAMA Logo" width={180} height={180} className="h-36 w-auto" priority />
             </a>
 
             <nav className="w-full md:w-auto md:justify-self-center">
@@ -352,7 +361,7 @@ export default function Home() {
               Our Specialized Divisions
             </h2>
             <p className="max-w-md text-sm leading-relaxed text-[#4b5563] sm:text-base">
-              At Sigma Group, we operates through the following specialized divisions:
+              At KLAMA Group, we operates through the following specialized divisions:
             </p>
           </div>
 
@@ -376,14 +385,25 @@ export default function Home() {
                   className={`group relative overflow-hidden rounded-[24px] ${index === 0 ? "sm:row-span-2" : ""
                     }`}
                 >
-                  <Image
-                    src={division.image}
-                    alt={division.name}
-                    fill
-                    sizes="(min-width: 1024px) 30vw, (min-width: 640px) 46vw, 100vw"
-                    className="object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/35 to-transparent" />
+                  {division.image.endsWith(".mp4") ? (
+                    <video
+                      src={division.image}
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="absolute inset-0 h-full w-full object-cover"
+                    />
+                  ) : (
+                    <Image
+                      src={division.image}
+                      alt={division.name}
+                      fill
+                      sizes="(min-width: 1024px) 30vw, (min-width: 640px) 46vw, 100vw"
+                      className="object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
+                  )}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/35 to-transparent" />
                   <div className="relative z-10 flex h-full flex-col justify-end p-5 text-white">
                     <span className="mb-2 w-fit rounded-full bg-white/20 px-3 py-1 text-xs font-medium uppercase tracking-[0.08em]">
                       {division.tagline}
@@ -400,13 +420,14 @@ export default function Home() {
 
           <div className="mt-4 rounded-[30px] border border-[#d8dde5] bg-[#e9edf2] p-4 sm:p-6 lg:p-7">
             <div className="grid gap-6 lg:grid-cols-[360px_1fr] lg:items-center">
-              <div className="relative aspect-[4/3] overflow-hidden rounded-[22px]">
-                <Image
-                  src="https://www.fao.org/images/faoraflibraries/default-album/malawi-photo-3.jpg?sfvrsn=4f457200_1"
-                  alt="Sigma innovation"
-                  fill
-                  sizes="(min-width: 1024px) 360px, 100vw"
-                  className="object-cover"
+              <div className="relative aspect-[4/3] overflow-hidden rounded-[22px] bg-black">
+                <video
+                  src="https://cdn.dribbble.com/userupload/47694991/file/bb488fd0605e2f3302dad696ce17aa4f.mp4"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className="h-full w-full object-cover"
                 />
               </div>
 
@@ -441,7 +462,7 @@ export default function Home() {
             <p className="text-sm font-medium text-[#6b7280] sm:text-base">Frequently Asked Questions</p>
             <h2 className="mt-4 text-3xl font-semibold leading-[1.08] tracking-[-0.03em] text-[#111827] sm:text-5xl">
               Everything You Need to Know:
-              <br className="hidden sm:block" /> <span className="text-[#8b5cf6]">Sigma Group FAQs</span>
+              <br className="hidden sm:block" /> <span className="text-[#8b5cf6]">KLAMA Group FAQs</span>
             </h2>
 
             <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
@@ -479,7 +500,7 @@ export default function Home() {
                 Technology That Delivers Results
               </h3>
               <p className="mt-4 max-w-3xl text-sm leading-relaxed text-white/88 sm:text-lg">
-                From health systems to income-generating mobility, Sigma Group builds solutions that
+                From health systems to income-generating mobility, KLAMA Group builds solutions that
                 work in real environments.
               </p>
 
@@ -507,3 +528,4 @@ export default function Home() {
     </main>
   );
 }
+

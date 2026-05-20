@@ -89,13 +89,24 @@ function ProjectCard({
         </div>
 
         <div className="relative min-h-[340px] overflow-hidden rounded-[22px] border border-white/40 bg-black/10 sm:min-h-[480px] lg:min-h-[620px]">
-          <Image
-            src={project.image}
-            alt={project.title}
-            fill
-            sizes="(min-width: 1024px) 40vw, 100vw"
-            className="object-cover object-center"
-          />
+          {project.image.endsWith(".mp4") ? (
+            <video
+              src={project.image}
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="h-full w-full object-cover"
+            />
+          ) : (
+            <Image
+              src={project.image}
+              alt={project.title}
+              fill
+              sizes="(min-width: 1024px) 40vw, 100vw"
+              className="object-cover object-center"
+            />
+          )}
         </div>
       </div>
     </div>
@@ -154,7 +165,7 @@ export default function FeaturedProjectsSticky({ projects }: FeaturedProjectsSti
             Our Featured Projects
           </h2>
           <p className="mt-5 max-w-3xl text-base leading-relaxed text-white/68 sm:text-lg">
-            Sigma Group is delivering Technology with Real-World Impact.
+            KLAMA Group is delivering Technology with Real-World Impact.
           </p>
         </div>
 
@@ -194,3 +205,4 @@ export default function FeaturedProjectsSticky({ projects }: FeaturedProjectsSti
     </section>
   );
 }
+

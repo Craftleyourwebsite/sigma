@@ -47,13 +47,13 @@ function ArrowUpRightIcon({ className = "h-4 w-4" }: IconProps) {
 
 const featuredProjects: ProjectContent[] = [
   {
-    id: "sigma-health-hmis",
-    title: "Sigma Health HMIS",
+    id: "KLAMA-health-hmis",
+    title: "KLAMA Health HMIS",
     subtitle: "Digital Health Systems at Scale",
     image:
-      "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1600&q=80",
+      "https://cdn.dribbble.com/userupload/46342797/file/d1f580ab032ce3a084c46cacc460d2e6.jpg?resize=1504x1128&vertical=center",
     description: [
-      "Sigma Health’s proprietary Health Management Information System (HMIS) is deployed across multiple clinics in Malawi, supporting secure patient data management and improved service delivery.",
+      "KLAMA Health’s proprietary Health Management Information System (HMIS) is deployed across multiple clinics in Malawi, supporting secure patient data management and improved service delivery.",
     ],
     delivered: [
       "Centralized patient record management",
@@ -72,9 +72,9 @@ const featuredProjects: ProjectContent[] = [
     title: "Dispatch & Mobility Coordination Platform",
     subtitle: "Real-Time Operations and Field Coordination",
     image:
-      "https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=1600&q=80",
+      "https://cdn.dribbble.com/userupload/4210878/file/original-54c175d02a389321bcb6adecf93ed85b.png?resize=1504x1128&vertical=center",
     description: [
-      "Sigma Group designed a modular dispatch and mobility coordination platform to support organizations managing vehicles, field teams, or time-sensitive services.",
+      "KLAMA Group designed a modular dispatch and mobility coordination platform to support organizations managing vehicles, field teams, or time-sensitive services.",
       "Originally deployed in an emergency response context, the platform is built as a sector-agnostic technology adaptable to multiple operational models.",
     ],
     delivered: [
@@ -104,9 +104,9 @@ const featuredProjects: ProjectContent[] = [
     title: "Laboratory Machine Integration",
     subtitle: "Bridging Diagnostic Equipment and Digital Systems",
     image:
-      "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=1600&q=80",
+      "https://cdn.dribbble.com/userupload/10854604/file/original-060e35ab53a854ccde99499e09d25438.mp4",
     description: [
-      "Sigma Group developed a reusable Laboratory Machine Integration Toolkit that enables automated transmission of diagnostic results into HMIS and other health information platforms.",
+      "KLAMA Group developed a reusable Laboratory Machine Integration Toolkit that enables automated transmission of diagnostic results into HMIS and other health information platforms.",
     ],
     delivered: [
       "Standardized machine-to-system integration",
@@ -128,11 +128,20 @@ export default function ProjectPage() {
   return (
     <main className="min-h-screen bg-[#0a0807] text-white">
       <section className="relative min-h-screen overflow-hidden md:h-screen">
-        <div className="absolute inset-0 bg-[#070707]" />
-        <div className={`${styles.ambient} absolute inset-0`} />
-        <div className="absolute -left-20 top-28 h-56 w-56 rounded-full bg-[#ff9854]/16 blur-3xl" />
-        <div className="absolute right-10 top-36 h-64 w-64 rounded-full bg-[#f8cfaa]/12 blur-3xl" />
-        <div className="absolute inset-x-0 bottom-0 h-56 bg-gradient-to-t from-black/45 to-transparent" />
+        {/* Hero Background Image & Gradient Overlay */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/project-bg.png"
+            alt="Projects Background"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-center"
+          />
+          {/* Multi-layered premium overlay to ensure readability */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-black/30" />
+          <div className="absolute inset-0 bg-black/40" />
+        </div>
 
         <div className="relative z-10 mx-auto flex h-full w-full max-w-[1380px] flex-col px-4 pb-8 pt-6 sm:px-7 lg:px-12">
           <header
@@ -140,11 +149,11 @@ export default function ProjectPage() {
           >
             <Link href="/" className="flex items-center justify-self-center md:justify-self-start">
               <Image
-                src="/sigmalogo.png"
-                alt="Sigma Logo"
-                width={108}
-                height={139}
-                className="h-16 w-auto"
+                src="/klama.svg"
+                alt="KLAMA Logo"
+                width={180}
+                height={180}
+                className="h-36 w-auto"
                 priority
               />
             </Link>
@@ -208,7 +217,7 @@ export default function ProjectPage() {
               </h1>
 
               <p className="mt-10 max-w-3xl text-left text-base leading-relaxed text-white/80 sm:text-lg">
-                Sigma Group designs and delivers digital systems that operate reliably in complex,
+                KLAMA Group designs and delivers digital systems that operate reliably in complex,
                 resource-constrained, and mission-critical environments.
               </p>
             </div>
@@ -244,14 +253,25 @@ export default function ProjectPage() {
                   style={{ background: project.background }}
                 >
                   <div className="relative h-44 overflow-hidden sm:h-52">
-                    <Image
-                      src={project.image}
-                      alt={project.title}
-                      fill
-                      sizes="(min-width: 1280px) 30vw, (min-width: 768px) 48vw, 100vw"
-                      className="object-cover"
-                      unoptimized
-                    />
+                    {project.image.endsWith(".mp4") ? (
+                      <video
+                        src={project.image}
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        className="h-full w-full object-cover"
+                      />
+                    ) : (
+                      <Image
+                        src={project.image}
+                        alt={project.title}
+                        fill
+                        sizes="(min-width: 1280px) 30vw, (min-width: 768px) 48vw, 100vw"
+                        className="object-cover"
+                        unoptimized
+                      />
+                    )}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-black/5 to-transparent" />
                   </div>
 
@@ -496,7 +516,7 @@ export default function ProjectPage() {
                 Technology That Delivers Results
               </h3>
               <p className="mt-4 max-w-3xl text-sm leading-relaxed text-white/88 sm:text-lg">
-                From health systems to income-generating mobility, Sigma Group builds solutions that
+                From health systems to income-generating mobility, KLAMA Group builds solutions that
                 work in real environments.
               </p>
 
@@ -523,3 +543,4 @@ export default function ProjectPage() {
     </main>
   );
 }
+

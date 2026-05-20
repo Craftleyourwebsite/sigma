@@ -9,11 +9,20 @@ export default function AboutUsPage() {
   return (
     <main className="min-h-screen bg-[#0a0807] text-white">
       <section className="relative min-h-screen overflow-hidden md:h-screen">
-        <div className="absolute inset-0 bg-[#070707]" />
-        <div className={`${styles.ambient} absolute inset-0`} />
-        <div className="absolute -left-20 top-28 h-56 w-56 rounded-full bg-[#ff9854]/16 blur-3xl" />
-        <div className="absolute right-10 top-36 h-64 w-64 rounded-full bg-[#f8cfaa]/12 blur-3xl" />
-        <div className="absolute inset-x-0 bottom-0 h-56 bg-gradient-to-t from-black/45 to-transparent" />
+        {/* Hero Background Image & Gradient Overlay */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/about-bg.png"
+            alt="About Us Background"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-center"
+          />
+          {/* Multi-layered premium overlay to ensure readability */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-black/30" />
+          <div className="absolute inset-0 bg-black/40" />
+        </div>
 
         <div className="relative z-10 mx-auto flex h-full w-full max-w-[1380px] flex-col px-4 pb-8 pt-6 sm:px-7 lg:px-12">
           <header
@@ -21,11 +30,11 @@ export default function AboutUsPage() {
           >
             <Link href="/" className="flex items-center justify-self-center md:justify-self-start">
               <Image
-                src="/sigmalogo.png"
-                alt="Sigma Logo"
-                width={108}
-                height={139}
-                className="h-16 w-auto"
+                src="/klama.svg"
+                alt="KLAMA Logo"
+                width={180}
+                height={180}
+                className="h-36 w-auto"
                 priority
               />
             </Link>
@@ -114,7 +123,7 @@ export default function AboutUsPage() {
                 real-world challenges.
               </p>
               <p className="mt-4 max-w-xl text-base leading-relaxed text-white/67">
-                Sigma Group is an ICT holding company providing end-to-end digital solutions across
+                KLAMA Group is an ICT holding company providing end-to-end digital solutions across
                 healthcare, consulting, artificial intelligence, and innovation ventures. We bring
                 together multidisciplinary expertise to design, build, and support systems that
                 improve service delivery, strengthen institutions, and enable sustainable growth.
@@ -122,7 +131,7 @@ export default function AboutUsPage() {
               <p className="mt-4 max-w-xl text-base leading-relaxed text-white/67">
                 Our structure allows each business unit to operate with sector-specific focus while
                 benefiting from shared governance, quality assurance, and security standards. This
-                enables Sigma Group to deliver complex, mission-critical systems with reliability,
+                enables KLAMA Group to deliver complex, mission-critical systems with reliability,
                 accountability, and long-term support.
               </p>
 
@@ -139,8 +148,8 @@ export default function AboutUsPage() {
             <div className="relative flex h-[420px] items-center justify-center overflow-hidden rounded-[22px] bg-[#080808] sm:h-[520px]">
               <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(255,255,255,0.08)_0%,_rgba(255,255,255,0)_65%)]" />
               <Image
-                src="/sigmalogo.png"
-                alt="Sigma Group logo"
+                src="/klama.svg"
+                alt="KLAMA Group logo"
                 width={260}
                 height={340}
                 sizes="(min-width: 1024px) 260px, 40vw"
@@ -161,11 +170,11 @@ export default function AboutUsPage() {
               </p>
 
               <h3 className="mt-6 text-4xl font-semibold leading-[0.98] tracking-[-0.03em] text-white sm:text-5xl">
-                The People Behind Sigma Group
+                The People Behind KLAMA Group
               </h3>
               <p className="mt-3 text-xl font-medium tracking-[-0.01em] text-white/92">Meet The Team</p>
               <p className="mt-4 max-w-xl text-base leading-relaxed text-white/67">
-                Behind Sigma Group is a multidisciplinary team of engineers, ICT architects, data
+                Behind KLAMA Group is a multidisciplinary team of engineers, ICT architects, data
                 professionals, and implementation specialists working across sectors to deliver
                 secure and dependable digital systems.
               </p>
@@ -193,8 +202,8 @@ export default function AboutUsPage() {
 
             <div className="relative h-[380px] overflow-hidden rounded-[22px] bg-black sm:h-[500px]">
               <Image
-                src="/flag-malawi.svg"
-                alt="Flag of Malawi"
+                src="https://cdn.dribbble.com/userupload/46392706/file/3b149e937da9d3f32608737112da31f0.png?resize=1504x1128&vertical=center"
+                alt="About Us visual"
                 width={1500}
                 height={1000}
                 sizes="(min-width: 1024px) 50vw, 100vw"
@@ -208,3 +217,4 @@ export default function AboutUsPage() {
     </main>
   );
 }
+

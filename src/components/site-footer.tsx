@@ -54,7 +54,7 @@ export default function SiteFooter({ compact = false }: SiteFooterProps) {
           <div>
             <p className="text-sm font-medium text-[#6b7280]">Become a Partner</p>
             <h3 className="mt-3 text-3xl font-semibold leading-tight tracking-[-0.02em] text-[#0f172a] sm:text-4xl">
-              Join Sigma Affiliate Program
+              Join KLAMA Affiliate Program
             </h3>
             <p className="mt-4 max-w-xl text-base leading-relaxed text-[#4b5563]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
@@ -83,8 +83,8 @@ export default function SiteFooter({ compact = false }: SiteFooterProps) {
         <footer className="mt-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-[1.25fr_0.9fr_0.75fr_1.1fr]">
           <div>
             <Link href="/" className="inline-flex items-center gap-3">
-              <Image src="/sigmalogo.png" alt="Sigma Logo" width={60} height={78} className="h-12 w-auto" />
-              <span className="text-xl font-semibold text-white">Sigma Group</span>
+              <Image src="/klama.svg" alt="KLAMA Logo" width={150} height={150} className="h-28 w-auto" />
+              <span className="text-xl font-semibold text-white">KLAMA Group</span>
             </Link>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-white/70">
               Secure and sustainable digital ecosystems in healthcare, consulting, AI, and
@@ -148,7 +148,7 @@ export default function SiteFooter({ compact = false }: SiteFooterProps) {
           <div>
             <h4 className="text-sm font-semibold uppercase tracking-[0.11em] text-white/70">Newsletter</h4>
             <p className="mt-3 text-sm leading-relaxed text-white/70">
-              Subscribe to the Sigma Group newsletter for insights on: Digital health systems and
+              Subscribe to the KLAMA Group newsletter for insights on: Digital health systems and
               HMIS innovation, AI and data-driven decision-making, Mobility, climate, and livelihood
               solutions, Project updates, deployments, and partnerships, Industry trends, policy,
               and technology insights
@@ -170,7 +170,7 @@ export default function SiteFooter({ compact = false }: SiteFooterProps) {
         </footer>
 
         <div className="mt-8 flex flex-col gap-2 border-t border-white/15 pt-6 text-xs text-white/50 sm:flex-row sm:items-center sm:justify-between">
-          <p>© 2026 Sigma Group. All rights reserved.</p>
+          <p>© 2026 KLAMA Group. All rights reserved.</p>
           <div className="flex items-center gap-4">
             <Link href="/login" className="text-white/80 transition hover:text-[#b794f6]">
               Admin
@@ -198,3 +198,4 @@ export default function SiteFooter({ compact = false }: SiteFooterProps) {
     </section>
   );
 }
+

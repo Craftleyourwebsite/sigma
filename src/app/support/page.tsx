@@ -39,11 +39,11 @@ export default function SupportPage() {
           >
             <Link href="/" className="flex items-center justify-self-center md:justify-self-start">
               <Image
-                src="/sigmalogo.png"
-                alt="Sigma Logo"
-                width={108}
-                height={139}
-                className="h-16 w-auto"
+                src="/klama.svg"
+                alt="KLAMA Logo"
+                width={180}
+                height={180}
+                className="h-36 w-auto"
                 priority
               />
             </Link>
@@ -143,7 +143,7 @@ export default function SupportPage() {
                 Technology That Delivers Results
               </h3>
               <p className="mt-4 max-w-3xl text-sm leading-relaxed text-white/88 sm:text-lg">
-                From health systems to income-generating mobility, Sigma Group builds solutions that
+                From health systems to income-generating mobility, KLAMA Group builds solutions that
                 work in real environments.
               </p>
 
@@ -171,3 +171,4 @@ export default function SupportPage() {
     </main>
   );
 }
+

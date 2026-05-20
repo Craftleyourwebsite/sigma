@@ -15,39 +15,39 @@ const sora = Sora({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://sigma-kohl-nu.vercel.app"),
+  metadataBase: new URL("https://KLAMA-kohl-nu.vercel.app"),
   title: {
-    default: "Sigma Group",
-    template: "%s | Sigma Group",
+    default: "KLAMA Group",
+    template: "%s | KLAMA Group",
   },
   description:
     "Delivering secure digital solutions across healthcare, consulting, artificial intelligence, and innovation ventures.",
   openGraph: {
-    title: "Sigma Group",
+    title: "KLAMA Group",
     description:
       "Delivering secure digital solutions across healthcare, consulting, artificial intelligence, and innovation ventures.",
-    url: "https://sigma-kohl-nu.vercel.app",
-    siteName: "Sigma Group",
+    url: "https://KLAMA-kohl-nu.vercel.app",
+    siteName: "KLAMA Group",
     locale: "en_US",
     type: "website",
     images: [
       {
-        url: "/sigmalogo-black.png",
-        alt: "Sigma Group",
+        url: "/klama.svg",
+        alt: "KLAMA Group",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sigma Group",
+    title: "KLAMA Group",
     description:
       "Delivering secure digital solutions across healthcare, consulting, artificial intelligence, and innovation ventures.",
-    images: ["/sigmalogo-black.png"],
+    images: ["/klama.svg"],
   },
   icons: {
-    icon: [{ url: "/sigmalogo-black.svg", type: "image/svg+xml" }],
-    shortcut: "/sigmalogo-black.svg",
-    apple: "/sigmalogo-black.png",
+    icon: [{ url: "/klama.svg", type: "image/svg+xml" }],
+    shortcut: "/klama.svg",
+    apple: "/klama.svg",
   },
 };
 
@@ -64,3 +64,4 @@ export default function RootLayout({
     </html>
   );
 }
+

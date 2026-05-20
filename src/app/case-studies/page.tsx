@@ -9,11 +9,20 @@ export default function CaseStudiesPage() {
   return (
     <main className="min-h-screen bg-[#0a0807] text-white">
       <section className="relative min-h-screen overflow-hidden md:h-screen">
-        <div className="absolute inset-0 bg-[#070707]" />
-        <div className={`${styles.ambient} absolute inset-0`} />
-        <div className="absolute -left-20 top-28 h-56 w-56 rounded-full bg-[#ff9854]/16 blur-3xl" />
-        <div className="absolute right-10 top-36 h-64 w-64 rounded-full bg-[#f8cfaa]/12 blur-3xl" />
-        <div className="absolute inset-x-0 bottom-0 h-56 bg-gradient-to-t from-black/45 to-transparent" />
+        {/* Hero Background Image & Gradient Overlay */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/case-bg.png"
+            alt="Case Studies Background"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-center"
+          />
+          {/* Multi-layered premium overlay to ensure readability */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-black/30" />
+          <div className="absolute inset-0 bg-black/40" />
+        </div>
 
         <div className="relative z-10 mx-auto flex h-full w-full max-w-[1380px] flex-col px-4 pb-8 pt-6 sm:px-7 lg:px-12">
           <header
@@ -21,11 +30,11 @@ export default function CaseStudiesPage() {
           >
             <Link href="/" className="flex items-center justify-self-center md:justify-self-start">
               <Image
-                src="/sigmalogo.png"
-                alt="Sigma Logo"
-                width={108}
-                height={139}
-                className="h-16 w-auto"
+                src="/klama.svg"
+                alt="KLAMA Logo"
+                width={180}
+                height={180}
+                className="h-36 w-auto"
                 priority
               />
             </Link>
@@ -89,7 +98,7 @@ export default function CaseStudiesPage() {
               </h1>
 
               <p className="mt-10 max-w-3xl text-left text-base leading-relaxed text-white/80 sm:text-lg">
-                Explore how Sigma Group designs, deploys, and scales secure digital systems that
+                Explore how KLAMA Group designs, deploys, and scales secure digital systems that
                 deliver measurable impact across sectors.
               </p>
             </div>
@@ -129,3 +138,4 @@ export default function CaseStudiesPage() {
     </main>
   );
 }
+

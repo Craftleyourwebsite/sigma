@@ -40,45 +40,45 @@ const menu = ["Home", "About Us", "Divisions", "Projects", "Case Studies", "Cont
 
 const divisionContent: DivisionContent[] = [
   {
-    id: "sigma-health",
+    id: "KLAMA-health",
     heading: "Strengthening Healthcare Through Digital Systems",
-    name: "Sigma Health",
+    name: "KLAMA Health",
     description:
-      "Sigma Health is a specialized digital health division focused on the design, development, deployment, and support of Health Management Information Systems (HMIS) and health-sector software solutions.",
+      "KLAMA Health is a specialized digital health division focused on the design, development, deployment, and support of Health Management Information Systems (HMIS) and health-sector software solutions.",
     details:
       "This division was established following extensive experience delivering custom software solutions across banking, engineering, and healthcare sectors, and the growing demand for robust digital health systems.",
     background: "linear-gradient(145deg, #6ca6e1 0%, #5b95d2 42%, #407ec0 100%)",
     textMode: "light",
   },
   {
-    id: "sigma-consult",
+    id: "KLAMA-consult",
     heading: "Expert ICT Consulting & Delivery",
-    name: "Sigma Consult",
+    name: "KLAMA Consult",
     description:
-      "Sigma Consult provides professional ICT consulting and technical delivery services to organizations seeking expert support in digital transformation and technology implementation.",
+      "KLAMA Consult provides professional ICT consulting and technical delivery services to organizations seeking expert support in digital transformation and technology implementation.",
     details:
-      "The consultancy division was formed by leveraging the same multidisciplinary team responsible for building Sigma Health, now offering these skills to external clients across industries.",
+      "The consultancy division was formed by leveraging the same multidisciplinary team responsible for building KLAMA Health, now offering these skills to external clients across industries.",
     background: "linear-gradient(145deg, #ffffff 0%, #f6f7f9 100%)",
     textMode: "dark",
   },
   {
-    id: "sigma-ai",
+    id: "KLAMA-ai",
     heading: "Intelligent Systems. Smarter Decisions.",
-    name: "SIGMA AI",
+    name: "KLAMA AI",
     description:
-      "Sigma AI is the research and innovation division of Sigma Group, focused on Artificial Intelligence, data-driven solutions, and intelligent system optimization.",
+      "KLAMA AI is the research and innovation division of KLAMA Group, focused on Artificial Intelligence, data-driven solutions, and intelligent system optimization.",
     details:
-      "Initially established to enhance Sigma Health systems, the division now offers AI services to external organizations seeking to improve operational efficiency, decision-making, and automation.",
+      "Initially established to enhance KLAMA Health systems, the division now offers AI services to external organizations seeking to improve operational efficiency, decision-making, and automation.",
     background: "linear-gradient(145deg, #060606 0%, #0f0f10 54%, #1a1a1d 100%)",
     textMode: "light",
   },
   {
-    id: "sigma-ventures",
+    id: "KLAMA-ventures",
     heading: "Innovation & Product Development",
-    name: "Sigma Ventures",
+    name: "KLAMA Ventures",
     intro: "Coming Soon",
     description:
-      "Sigma Ventures is the innovation and investment arm of Sigma Group, focused on developing in-house digital products, incubating high-impact solutions, and exploring strategic partnerships.",
+      "KLAMA Ventures is the innovation and investment arm of KLAMA Group, focused on developing in-house digital products, incubating high-impact solutions, and exploring strategic partnerships.",
     details:
       "This division provides a structured pathway for experimentation, product scaling, and long-term value creation.",
     background: "linear-gradient(145deg, #8579ff 0%, #6c5de8 48%, #453eb9 100%)",
@@ -90,11 +90,20 @@ export default function DivisionPage() {
   return (
     <main className="min-h-screen bg-[#0a0807] text-white">
       <section className="relative min-h-screen overflow-hidden md:h-screen">
-        <div className="absolute inset-0 bg-[#070707]" />
-        <div className={`${styles.ambient} absolute inset-0`} />
-        <div className="absolute -left-20 top-28 h-56 w-56 rounded-full bg-[#ff9854]/16 blur-3xl" />
-        <div className="absolute right-10 top-36 h-64 w-64 rounded-full bg-[#f8cfaa]/12 blur-3xl" />
-        <div className="absolute inset-x-0 bottom-0 h-56 bg-gradient-to-t from-black/45 to-transparent" />
+        {/* Hero Background Image & Gradient Overlay */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/division-bg.png"
+            alt="Divisions Background"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-center"
+          />
+          {/* Multi-layered premium overlay to ensure readability */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-black/30" />
+          <div className="absolute inset-0 bg-black/40" />
+        </div>
 
         <div className="relative z-10 mx-auto flex h-full w-full max-w-[1380px] flex-col px-4 pb-8 pt-6 sm:px-7 lg:px-12">
           <header
@@ -102,11 +111,11 @@ export default function DivisionPage() {
           >
             <Link href="/" className="flex items-center justify-self-center md:justify-self-start">
               <Image
-                src="/sigmalogo.png"
-                alt="Sigma Logo"
-                width={108}
-                height={139}
-                className="h-16 w-auto"
+                src="/klama.svg"
+                alt="KLAMA Logo"
+                width={180}
+                height={180}
+                className="h-36 w-auto"
                 priority
               />
             </Link>
@@ -170,7 +179,7 @@ export default function DivisionPage() {
               </h1>
 
               <p className="mt-10 max-w-3xl text-left text-base leading-relaxed text-white/80 sm:text-lg">
-                Sigma Group operates through dedicated business units, each focused on a specific
+                KLAMA Group operates through dedicated business units, each focused on a specific
                 domain while working under shared governance, quality assurance, and security
                 standards.
               </p>
@@ -186,16 +195,16 @@ export default function DivisionPage() {
               Our Specialized Divisions
             </h2>
             <p className="mt-3 max-w-4xl text-sm leading-relaxed text-[#2a2a2a] sm:text-base">
-              At Sigma Group, we operates through the following specialized divisions:
+              At KLAMA Group, we operates through the following specialized divisions:
             </p>
             <p className="mt-4 text-xs font-semibold uppercase tracking-[0.14em] text-[#1f2937] sm:text-sm">
-              SIGMA HEALTH
+              KLAMA HEALTH
               <span className="mx-2 text-black/40">•</span>
-              SIGMA CONSULT
+              KLAMA CONSULT
               <span className="mx-2 text-black/40">•</span>
-              SIGMA AI
+              KLAMA AI
               <span className="mx-2 text-black/40">•</span>
-              SIGMA VENTURES
+              KLAMA VENTURES
             </p>
           </div>
 
@@ -298,7 +307,7 @@ export default function DivisionPage() {
                 Technology That Delivers Results
               </h3>
               <p className="mt-4 max-w-3xl text-sm leading-relaxed text-white/88 sm:text-lg">
-                From health systems to income-generating mobility, Sigma Group builds solutions that
+                From health systems to income-generating mobility, KLAMA Group builds solutions that
                 work in real environments.
               </p>
 
@@ -325,3 +334,4 @@ export default function DivisionPage() {
     </main>
   );
 }
+

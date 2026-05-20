@@ -3,8 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Admin Login | Sigma Group",
-  description: "Secure admin access for Sigma Group.",
+  title: "Admin Login | KLAMA Group",
+  description: "Secure admin access for KLAMA Group.",
 };
 
 export default function LoginPage() {
@@ -15,7 +15,7 @@ export default function LoginPage() {
           <div className="w-full max-w-[360px]">
             <div className="flex items-center justify-between">
               <p className="text-sm font-semibold tracking-[-0.01em] text-[#121212]">
-                Sigma<span className="text-[#8b5cf6]">Admin</span>
+                KLAMA<span className="text-[#8b5cf6]">Admin</span>
               </p>
               <Link href="/" className="text-xs text-black/65 transition hover:text-black">
                 Back to site
@@ -59,12 +59,12 @@ export default function LoginPage() {
             <p className="mt-16 text-center text-xs leading-relaxed text-black/55">
               Feel free to contact us
               <br />
-              <a href="mailto:support@sigma.com" className="text-[#74b581] transition hover:text-[#4fae66]">
-                support@sigma.com
+              <a href="mailto:support@KLAMA.com" className="text-[#74b581] transition hover:text-[#4fae66]">
+                support@KLAMA.com
               </a>
             </p>
 
-            <p className="mt-16 text-center text-[10px] text-black/26">All rights reserved Sigma Technologies 2026</p>
+            <p className="mt-16 text-center text-[10px] text-black/26">All rights reserved KLAMA Technologies 2026</p>
           </div>
         </section>
 
@@ -72,17 +72,18 @@ export default function LoginPage() {
           <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(255,255,255,0.08)_0%,_rgba(255,255,255,0)_62%)]" />
           <div className="relative z-10 flex flex-col items-center">
             <Image
-              src="/sigmalogo.png"
-              alt="Sigma Group logo"
+              src="/klama.svg"
+              alt="KLAMA Group logo"
               width={190}
               height={240}
               priority
-              className="h-28 w-auto sm:h-36"
+              className="h-40 w-auto sm:h-52"
             />
-            <p className="mt-4 text-2xl font-semibold tracking-[-0.02em] text-white sm:text-3xl">Sigma Group</p>
+            <p className="mt-4 text-2xl font-semibold tracking-[-0.02em] text-white sm:text-3xl">KLAMA Group</p>
           </div>
         </section>
       </div>
     </main>
   );
 }
+
